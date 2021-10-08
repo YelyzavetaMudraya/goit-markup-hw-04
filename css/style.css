@@ -26,9 +26,6 @@ ul {
   padding: 0;
   list-style: none;
 }
-a {
-  transition: 0.3s all ease;
-}
 img {
   display: block;
   max-width: 100%;
@@ -90,11 +87,10 @@ img {
 .navigation-link.current-page {
   color: var(--accent-text-color);
 }
-.site-nav .navigation-link:hover,
-.site-nav .navigation-link:focus {
+.navigation-link:hover,
+.navigation-link:focus {
   color: var(--accent-text-color);
 }
-
 .contacts {
   display: flex;
 }
@@ -137,7 +133,7 @@ img {
 }
 .footer-position {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .style-logo-white {
   color: #ffff;
@@ -374,7 +370,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .social-networks {
   display: flex;
@@ -474,7 +470,6 @@ img {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: 0.5s all ease;
 }
 
 /*Галерея работ*/
@@ -494,8 +489,8 @@ img {
   margin-top: var(--project-item-gap);
   flex-basis: calc(100 / 3 - var(--project-item-gap));
 }
-.project-item:focus,
-.project-item:hover {
+.project-item-content:focus,
+.project-item-content:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
@@ -504,6 +499,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: #ffff;
+  text-decoration: none;
 }
 .project-item-box {
   padding: 20px 24px;
